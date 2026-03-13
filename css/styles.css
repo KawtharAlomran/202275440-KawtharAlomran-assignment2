@@ -51,6 +51,7 @@ button {
     max-width: 240px;   /* Keeps button from being too wide */
     align-self: center;   /* Centers the button inside the form */
     transition: opacity 0.2s ease; /* Add smooth opacity animation */
+    background-color: white;
 }
 /* Apply hover effect when the mouse moves over a button */
 button:hover {

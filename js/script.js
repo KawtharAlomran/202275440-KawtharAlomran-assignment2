@@ -69,10 +69,25 @@ form.addEventListener("submit", function(event) {
     const email = emailInput.value.trim();
     const message = messageInput.value.trim();
 
-    // Check if fields are empty
-    if (name === "" || email === "" || message === "") {
-        formMessage.textContent = "Please fill in all fields.";
-    } 
+    // Check if the name field is empty
+    if (name === "") {
+        formMessage.textContent = "Please enter your name.";
+    }
+    // Check if the email field is empty
+    else if (email === "") {
+        formMessage.textContent = "Please enter your email.";
+    }
+     // Check if the message field is empty
+    else if (message === "") {
+        formMessage.textContent = "Please enter your message.";
+    }
+
+    // Check if the email format is valid
+    else if (!email.includes("@") || !email.includes(".")) {
+        formMessage.textContent = "Please enter a valid email address.";
+    }
+
+    // If all inputs are valid, show success message
     else {
         formMessage.textContent = "Your message has been sent successfully!";
         form.reset();
