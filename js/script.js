@@ -18,3 +18,33 @@ if (currentHour < 12) {
 
 // Displays the greeting message inside the selected HTML element
 greetingElement.textContent = message;
+
+// Get all buttons that show project details
+const buttons = document.querySelectorAll(".showDetails");
+
+// Loop through each button
+buttons.forEach(function(button) {
+
+    // Add a click event to each button
+    button.addEventListener("click", function() {
+
+        // Find the description that belongs to the same project
+        const description = button.parentElement.querySelector(".projectDescription");
+       
+        // Check if the description is currently visible
+        if (description.style.display === "block") {
+            // Hide the description
+            description.style.display = "none";
+            // Change the button text back to "Show details"
+            button.textContent = "Show details";
+        } 
+        else {
+            // Show the description
+            description.style.display = "block";
+            // Change the button text to "Hide details"
+            button.textContent = "Hide details";
+        }
+
+    });
+
+});

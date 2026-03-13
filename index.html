@@ -10,6 +10,9 @@
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/styles.css">
+    
+     <!-- External JavaScript file -->
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -46,30 +49,39 @@
 
             <!-- The first project -->
             <article class="project">
+                <!-- the project image-->
+                <img src="assets/images/Student Schedule Route Visualizer.png" alt="Student Schedule Route Visualizer">
+          
                 <!-- the project title-->
                 <h3>Student Schedule Route Visualizer</h3>
 
+                <!-- button that will show the project's details-->
+                <button class="showDetails">Show details</button>
+
                 <!-- the project description-->
-                <p> A desktop application that processes Excel schedule data to visualize a student's 
+                <p class = "projectDescription"> A desktop application that processes Excel schedule data to visualize a student's 
                     daily route between classes. The system dynamically filters courses by CRN and day,
                     calculates travel distance, and draws the route manually on a campus map panel.</p>
 
-                <!-- the project image-->
-                <img src="assets/images/Student Schedule Route Visualizer.png" alt="Student Schedule Route Visualizer">
             </article>
 
             <!-- The second project -->
             <article class="project">
+                <!-- the project image-->
+                <img src="assets/images/File System Visualizer.png" alt="File System Visualizer">
+                
                 <!-- the project title-->
                 <h3>File System Visualizer</h3>
+                
+                <!-- button that will show the project's details-->
+                <button class="showDetails">Show details</button>
 
                 <!-- the project description-->
-                <p> A desktop application that recursively traverses a selected directory and 
+                <p class = "projectDescription"> A desktop application that recursively traverses a selected directory and 
                     visualizes its structure using the Composite and Strategy design patterns.
                     The system calculates folder sizes dynamically and supports both Tree and Bar Chart visualizations.</p>
                 
-                <!-- the project image-->
-                <img src="assets/images/File System Visualizer.png" alt="File System Visualizer">
+               
             </article>
         </div>
     </section>
@@ -92,8 +104,5 @@
             <button type="submit">Send</button>
         </form>
     </section>
-
-    <!-- External JavaScript file -->
-    <script src="js/script.js"></script>
 </body>
 </html>

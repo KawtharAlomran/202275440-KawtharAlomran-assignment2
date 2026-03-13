@@ -117,10 +117,19 @@ nav a:hover {
 /* Styling project images */
 .project img { 
     width: 100%;  /* Makes image fill the card width */
-    height: auto;   /* Maintains image aspect ratio */
-    display: block;  
+    height: 250px;   
+    display: block; 
+    object-fit: contain;
+    background-color: white; 
     border-radius: 16px; /* Rounds the corners to match card corner rounding*/
 }
+
+
+/* Hiding the project description */
+.projectDescription{
+    display: none;
+}
+
 
 /* Contact section*/
 
