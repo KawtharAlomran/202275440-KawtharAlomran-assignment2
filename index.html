@@ -10,7 +10,7 @@
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/styles.css">
-    
+
      <!-- External JavaScript file -->
     <script src="js/script.js" defer></script>
 </head>
@@ -91,7 +91,7 @@
         <h2>Contact</h2>
 
         <!-- Create the contact form-->
-        <form>
+        <form id="contactForm">
             <label for="name">Name</label>
             <input id="name" type="text" required>
 
@@ -102,6 +102,7 @@
             <textarea id = "message" required></textarea>
 
             <button type="submit">Send</button>
+            <p id="formMessage"></p>
         </form>
     </section>
 </body>

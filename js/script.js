@@ -19,6 +19,7 @@ if (currentHour < 12) {
 // Displays the greeting message inside the selected HTML element
 greetingElement.textContent = message;
 
+// Implement show/hide project descriptions on button click // 
 // Get all buttons that show project details
 const buttons = document.querySelectorAll(".showDetails");
 
@@ -47,4 +48,47 @@ buttons.forEach(function(button) {
 
     });
 
+});
+
+// Validates user input and shows a confirmation message// 
+// Get form and input elements
+const form = document.getElementById("contactForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+const formMessage = document.getElementById("formMessage");
+
+// Listen for form submission
+form.addEventListener("submit", function(event) {
+
+    // Prevent page reload
+    event.preventDefault();
+
+    // Get input values
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+
+    // Check if fields are empty
+    if (name === "" || email === "" || message === "") {
+        formMessage.textContent = "Please fill in all fields.";
+    } 
+    else {
+        formMessage.textContent = "Your message has been sent successfully!";
+        form.reset();
+    }
+
+});
+
+// Clear the form message when the user starts typing again to avoid confusion
+nameInput.addEventListener("input", function() {
+    formMessage.textContent = "";
+});
+
+emailInput.addEventListener("input", function() {
+    formMessage.textContent = "";
+});
+
+messageInput.addEventListener("input", function() {
+    formMessage.textContent = "";
 });
