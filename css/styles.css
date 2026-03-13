@@ -40,6 +40,22 @@ p {
     line-height: 1.6; /* Increasing line spacing to improve readability */
     margin-bottom: 20px;  /* Adds space below each paragraph */
 }
+/* Button styling */
+button {
+    padding: 12px; /* Button inner spacing */
+    border-radius: 8px;  /* Rounds the corners */
+    border: none;  /* Removes default border */
+    cursor: pointer;    /* Shows pointer on hover */
+    font-size: 16px;
+    width: 100%;
+    max-width: 240px;   /* Keeps button from being too wide */
+    align-self: center;   /* Centers the button inside the form */
+    transition: opacity 0.2s ease; /* Add smooth opacity animation */
+}
+/* Apply hover effect when the mouse moves over a button */
+button:hover {
+    opacity: 0.8; /* Slightly changes transparency when hovering */
+}
 
 /* Styling the greeting text */
 #greeting {
@@ -70,12 +86,13 @@ nav a {
     border-radius: 16px;  /* Rounds the corners */             
     margin: 8px;   /* Adds spacing between buttons */
     display: inline-block; /* Allows padding and margin to work properly */
-                   
+    transition: opacity 0.2s ease; /* Makes the hover effect smooth */             
 }
 /* Hover effect for navigation buttons */
 nav a:hover {
     opacity: 0.8; /* Slightly changes transparency when hovering */
 }
+
 /* About Me section*/
 
 /* Styling the short tagline text */
@@ -112,6 +129,13 @@ nav a:hover {
     flex: 1 1 260px;      /* Flexible width (min 260px, can grow and shrink) */
     max-width: 520px;  /* Prevents cards from becoming too wide */   
     width: auto; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add smooth animation */
+}
+
+/* Apply hover effect when the mouse moves over a project card */
+.project:hover {
+    transform: translateY(-6px);  /* Slightly move the card upward*/
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* Add a soft shadow under the card */
 }
 
 /* Styling project images */
@@ -160,16 +184,6 @@ textarea {
     resize: vertical; /* Enables vertical resizing only */
 
 }
-
-/* Submit button styling */
-button {
-    padding: 12px; /* Button inner spacing */
-    border-radius: 8px;  /* Rounds the corners */
-    border: none;  /* Removes default border */
-    cursor: pointer;    /* Shows pointer on hover */
-    font-size: 16px;
-    width: 100%;
-    max-width: 240px;   /* Keeps button from being too wide */
-    align-self: center;   /* Centers the button inside the form */
+textarea{
+    min-height: 100px;
 }
-
