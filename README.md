@@ -28,6 +28,7 @@ The website focuses on clean design, responsive layout, and interactive features
 
 ## Project Structure
 
+```text
 202275440-KawtharAlomran-assignment2/
 ├── assets/
 │   └── images/
@@ -42,6 +43,7 @@ The website focuses on clean design, responsive layout, and interactive features
 │   └── script.js
 ├── index.html
 └── README.md
+```
 
 ## Setup Instructions
 
